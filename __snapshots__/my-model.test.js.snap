@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should call model.findOne with correct order clause 1`] = `
+Array [
+  Array [
+    "Association",
+    "OtherAssociation",
+    "createdAt",
+    "ASC",
+  ],
+]
+`;
+
+exports[`It should initialise correctly 1`] = `
+Array [
+  Object {
+    "disputeId": "UUID",
+    "message": "TEXT",
+    "reply": "TEXT",
+    "type": "ENUM-my,enum,options",
+    "updateCreatorId": "STRING",
+  },
+  Object {
+    "hooks": Object {
+      "afterCreate": [Function],
+    },
+    "sequelize": Object {},
+  },
+]
+`;

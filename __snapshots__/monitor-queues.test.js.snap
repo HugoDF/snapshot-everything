@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`monitorQueues It should return an Arena instance with defaulted redis data when REDIS_URL is empty 1`] = `
+Array [
+  Object {
+    "queues": Array [
+      Object {
+        "hostId": "Worker",
+        "name": "MY_TYPE",
+        "redis": Object {
+          "database": "0",
+          "host": "localhost",
+          "password": undefined,
+          "port": 6379,
+        },
+      },
+    ],
+  },
+  Object {
+    "basePath": "/arena",
+    "disableListen": true,
+  },
+]
+`;
+
+exports[`monitorQueues It should return an Arena instance with parsed data from REDIS_URL 1`] = `
+Array [
+  Object {
+    "queues": Array [
+      Object {
+        "hostId": "Worker",
+        "name": "MY_TYPE",
+        "redis": Object {
+          "database": "database-name",
+          "host": "hosting",
+          "password": "passsssword",
+          "port": 5555,
+        },
+      },
+    ],
+  },
+  Object {
+    "basePath": "/arena",
+    "disableListen": true,
+  },
+]
+`;

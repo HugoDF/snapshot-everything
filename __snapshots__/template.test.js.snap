@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render handlebars correctly 1`] = `
+"<section>
+  <h1>Handlebars</h1>
+  <p>Handlebars is great</p>
+</section>
+"
+`;
+
+exports[`It should render pug correctly 1`] = `"<section><h1>Pug</h1><p>Pug is great</p></section>"`;
