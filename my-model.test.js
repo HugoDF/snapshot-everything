@@ -16,6 +16,9 @@ test('It should initialise correctly', () => {
   MyModel.init(mockSequelize, mockDataTypes);
   expect(MockModel.init).toHaveBeenCalledTimes(1);
   expect(MockModel.init.mock.calls[0]).toMatchSnapshot();
+
+  // Snapshotting a function doesn't do much :D
+  expect(MockModel.init.mock.calls[0][1].hooks.afterCreate).toBe(MyModel.afterCreate);
 });
 
 
